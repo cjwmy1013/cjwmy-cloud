@@ -1,0 +1,26 @@
+spring:
+
+  #缓存配置
+  redis:
+      host: 192.168.2.226
+      port: 6000
+      password: zndz
+      timeout: 10000
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 10000
+
+  #数据源配置
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://192.168.14.137:3306/recruit
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+info:
+  env: 公司环境
+  author: cjwmy1013
