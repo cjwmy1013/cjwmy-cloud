@@ -1,0 +1,10 @@
+spring:
+
+  # 数据源配置
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/recruit?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
