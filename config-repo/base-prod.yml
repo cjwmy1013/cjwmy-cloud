@@ -21,6 +21,20 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
-info:
-  env: 公司环境
-  author: cjwmy1013
+#MyBatis配置
+mybatis:
+  #指明mapper的xml文件存放位置
+  mapper-locations: classpath:/mappings/*Mapper.xml
+  #指明和数据库映射的实体的所在包
+  type-aliases-package: com.zoe.**.domain
+
+#用户信息自定义配置
+author:
+  env: 本地环境
+  name: 战神刘玉栋
+  age: 27
+  number:  ${random.int}
+  uuid : ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: My name is ${author.name}
