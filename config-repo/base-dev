@@ -1,0 +1,40 @@
+spring:
+
+    #缓存配置
+  redis:
+      host: localhost
+      port: 6000
+      password: zndz
+      timeout: 10000
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 10000
+
+  #数据源配置
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/recruit
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#MyBatis配置
+mybatis:
+  #指明mapper的xml文件存放位置
+  mapper-locations: classpath:/mappings/*Mapper.xml
+  #指明和数据库映射的实体的所在包
+  type-aliases-package: com.zoe.**.domain
+
+#用户信息自定义配置
+author:
+  env: 本地环境
+  name: 战神刘玉栋
+  age: 27
+  number:  ${random.int}
+  uuid : ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: My name is ${author.name}
