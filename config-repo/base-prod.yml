@@ -1,3 +1,14 @@
+###################################
+### 注册到服务中心配置
+###################################
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+###################################
+### Spring集成配置
+###################################
 spring:
 
   #缓存配置
@@ -21,16 +32,20 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
-#MyBatis配置
+###################################
+### MyBatis配置
+###################################
 mybatis:
   #指明mapper的xml文件存放位置
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
   type-aliases-package: com.zoe.**.domain
 
-#用户信息自定义配置
+###################################
+### 用户信息自定义配置
+###################################
 author:
-  env: 本地环境
+  env: 生产环境
   name: 战神刘玉栋
   age: 27
   number:  ${random.int}
