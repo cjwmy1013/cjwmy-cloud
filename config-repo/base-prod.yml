@@ -37,7 +37,7 @@ spring:
 ###################################
 mybatis:
   #指明mapper的xml文件存放位置
-  mapper-locations: classpath:/mappings/*Mapper.xml
+  mapper-locations: classpath:/mappers/*Mapper.xml
   #指明和数据库映射的实体的所在包
   type-aliases-package: com.zoe.**.domain
 
