@@ -31,6 +31,13 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  
+  # rabbitmq配置
+  rabbitmq:
+      password: 1234
+      port: 5672
+      host: 192.168.1.63
+      username: admin
 
 ###################################
 ### MyBatis配置
