@@ -56,6 +56,17 @@ feign:
     enabled: true
 
 ###################################
+### 超时相关配置
+###################################
+#example-demo:
+#  ribbon:
+#    ConnectTimeout: 500
+#    MaxAutoRetries: l
+#    MaxAutoRetriesNextServer: 1
+#    OkToRetryOnAllOperations: true
+#    ReadTimeout: 2000
+
+###################################
 ### 用户信息自定义配置
 ###################################
 author:
