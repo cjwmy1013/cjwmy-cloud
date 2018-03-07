@@ -63,7 +63,7 @@ feign:
 ###################################
 #example-demo:
 #  ribbon:
-#    ConnectTimeout: 500
+#    ConnectTimeout: 1500
 #    MaxAutoRetries: l
 #    MaxAutoRetriesNextServer: 1
 #    OkToRetryOnAllOperations: true
