@@ -49,7 +49,7 @@ mybatis:
   #指明mapper的xml文件存放位置
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
-  type-aliases-package: com.zoe.*.entity,com.zoe.*.*.entity
+  type-aliases-package: com.zoe.*.entity,com.zoe.example.demo.entity
 
 ###################################
 ### feign 配置
