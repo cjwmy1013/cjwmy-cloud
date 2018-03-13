@@ -16,7 +16,7 @@ spring:
 
     #缓存配置
   redis:
-      host: localhost
+      host: localhost1
       port: 6000
       password: zndz
       timeout: 10000
