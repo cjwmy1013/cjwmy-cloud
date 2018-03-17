@@ -29,7 +29,7 @@ spring:
   #数据源配置
   datasource:
     platform: mysql
-    url: jdbc:mysql://192.168.14.137:3306/recruit
+    url: jdbc:mysql://192.168.14.137:3306/wechat_demo
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
