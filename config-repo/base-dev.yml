@@ -70,6 +70,16 @@ feign:
 #    ReadTimeout: 2000
 
 ###################################
+### 公众号信息
+###################################
+wx: 
+  flag: on
+  token: cjwmy
+  appid: wx2155ca54a120aa47
+  appsecret: afd22653480b8c7cc2fcaa24dd065929
+  aeskey: vQazjqyZ8reN4XJCewHRv6RK4Tu9aaOER78BGimauLm
+
+###################################
 ### 用户信息自定义配置
 ###################################
 author:
