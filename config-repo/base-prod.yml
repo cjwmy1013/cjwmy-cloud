@@ -14,9 +14,9 @@ eureka:
 ###################################
 spring:
 
-  #缓存配置
+    #缓存配置
   redis:
-      host: 192.168.2.226
+      host: localhost
       port: 6000
       password: zndz
       timeout: 10000
@@ -29,17 +29,17 @@ spring:
   #数据源配置
   datasource:
     platform: mysql
-    url: jdbc:mysql://192.168.14.137:3306/wechat_patient
+    url: jdbc:mysql://localhost:3306/recruit
     username: root
-    password: 123456
+    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-  
+
   # rabbitmq配置
   rabbitmq:
       password: 1234
       port: 5672
-      host: 192.168.1.63
+      host: localhost
       username: admin
 
 ###################################
@@ -83,7 +83,7 @@ wx:
 ### 用户信息自定义配置
 ###################################
 author:
-  env: 生产环境
+  env: 本地环境
   name: 战神刘玉栋
   age: 27
   number:  ${random.int}
