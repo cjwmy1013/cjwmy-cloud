@@ -50,6 +50,7 @@ mybatis:
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
   type-aliases-package: com.zoe.example,com.zoe.business
+  config-location: classpath:mybatis-config.xml
 
 ###################################
 ### feign 配置
