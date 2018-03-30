@@ -93,6 +93,9 @@ author:
   value: ${random.value}
   greeting: My name is ${author.name}
 
+###################################
+### 项目配置
+###################################
 project:
   hospital: 宁德第一医院
   
