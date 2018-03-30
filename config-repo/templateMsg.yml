@@ -6,5 +6,5 @@ subOk:
   url: https://www.baidu.com/
   first: 您好，您已预约挂号成功。
   remark: 请您准时到达取号。
-  remarkColor: #FF6633
+  remarkColor: FF6633
   
