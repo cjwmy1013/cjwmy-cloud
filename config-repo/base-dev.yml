@@ -30,7 +30,7 @@ spring:
   #数据源配置
   datasource:
     platform: mysql
-    url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
