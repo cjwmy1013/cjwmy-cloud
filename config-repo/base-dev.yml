@@ -95,8 +95,20 @@ author:
   greeting: My name is ${author.name}
 
 ###################################
-### 项目配置
+### 项目级配置
+### hospital：医院名称
+### drugFlag：药房标志（0：关；1：点击方式；2扫码方式）
+### clinicFlag：诊疗队列开关（0：关；1：开）
+### signInFlag：是否需要签到（0：不需要；1：需要）
 ###################################
 project:
   hospital: 宁德第一医院
+  drugFlag: 1
+  clinicFlag: 0
+  signInFlag: 1
+###################################
+### 系统级配置
+###################################
+system:
+  zuulTimeout: 10000
   
