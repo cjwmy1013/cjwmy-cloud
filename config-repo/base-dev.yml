@@ -30,9 +30,10 @@ spring:
   #数据源配置
   datasource:
     platform: mysql
-    url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
+    #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://10.0.6.115:3306/wechat_patient?characterEncoding=utf8&useSSL=false
     username: root
-    password: 123456
+    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   
