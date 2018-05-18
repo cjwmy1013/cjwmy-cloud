@@ -107,6 +107,9 @@ project:
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
+  breakNum: 3
+  breakDay: 7
+  cancelWeekNum: 3
 
 ###################################
 ### 系统级配置
