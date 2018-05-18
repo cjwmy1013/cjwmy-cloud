@@ -1,22 +1,23 @@
 ###################################
 ### 注册到服务中心配置
 ###################################
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  #instance:
-    #preferIpAddress: true
-    #@instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#eureka:
+#  client:
+#    serviceUrl:
+#      #defaultZone: http://localhost:8761/eureka/
+#      defaultZone: http://192.168.14.185:8761/eureka/
+#  instance:
+#    preferIpAddress: true
+#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
 
 ###################################
 ### Spring集成配置
 ###################################
 spring:
 
-    #缓存配置
+  #缓存配置
   redis:
-      host: localhost
+      host: 192.168.14.185
       port: 6000
       password: zndz
       timeout: 10000
@@ -29,17 +30,18 @@ spring:
   #数据源配置
   datasource:
     platform: mysql
-    url: jdbc:mysql://localhost:3306/recruit
+    #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.14.185:3308/wechat_patient?characterEncoding=utf8&useSSL=false
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-
+  
   # rabbitmq配置
   rabbitmq:
       password: 1234
       port: 5672
-      host: localhost
+      host: 192.168.1.63
       username: admin
 
 ###################################
@@ -49,7 +51,8 @@ mybatis:
   #指明mapper的xml文件存放位置
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
-  type-aliases-package: com.zoe.example,com.zoe.business
+  type-aliases-package: com.zoe.example,com.zoe.business,com.zoe.function
+  config-location: classpath:mybatis-config.xml
 
 ###################################
 ### feign 配置
@@ -83,7 +86,7 @@ wx:
 ### 用户信息自定义配置
 ###################################
 author:
-  env: 本地环境
+  env: 开发环境
   name: 战神刘玉栋
   age: 27
   number:  ${random.int}
@@ -91,3 +94,25 @@ author:
   max: ${random.int(10)}
   value: ${random.value}
   greeting: My name is ${author.name}
+
+###################################
+### 项目级配置
+### hospital：医院名称
+### drugFlag：药房标志（0：关；1：点击方式；2扫码方式）
+### clinicFlag：诊疗队列开关（0：关；1：开）
+### signInFlag：是否需要签到（0：不需要；1：需要）
+###################################
+project:
+  hospital: 宁德第一医院
+  drugFlag: 1
+  clinicFlag: 0
+  signInFlag: 1
+  breakNum: 3
+  breakDay: 7
+  cancelWeekNum: 3
+
+###################################
+### 系统级配置
+###################################
+system:
+  zuulTimeout: 10000
