@@ -115,6 +115,6 @@ project:
 ### 系统级配置
 ###################################
 system:
-  imageServer: cjwmy.mynatapp.cc
+  imageServer: http://cjwmy.mynatapp.cc
   zuulTimeout: 10000
   
