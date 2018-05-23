@@ -118,4 +118,5 @@ system:
   hipWs: http://192.168.14.170:1506/services/HIPServer?wsdl
   imageServer: http://cjwmy.mynatapp.cc
   zuulTimeout: 10000
+  defaultReply: what are you talking about.
   
