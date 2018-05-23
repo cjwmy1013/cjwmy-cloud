@@ -1,5 +1,6 @@
 ###################################
 ### 预约挂号成功通知
+### 注：预约提醒也可以用这个，first修改一下
 ###################################
 subOk:
   templateId: 1Qn82h7vDlLbOdQAvu8s2EQBdd6krol6wa55l0noG3c
@@ -8,3 +9,45 @@ subOk:
   remark: 请您准时到达取号。
   remarkColor: FF6633
   
+###################################
+### 取消预约成功通知
+###################################
+cancelOk:
+  templateId: F4EleWgzHwhnnY8XeWd7aprxa5OqZ8m_QNCMbMegOQo
+  url: https://www.baidu.com/
+  first: 您好，您预约的号源已经成功取消。取消号源信息如下：
+
+###################################
+### 候诊队列提醒通知
+###################################
+queueNotice:
+  templateId: JCpM1ceazN4BBSgIzsA0do0gQrtotV1E4EYf9NPsM1I
+  url: https://www.baidu.com/
+ 
+###################################
+### 其他队列提醒通知
+###################################
+queueOtherNotice:
+  templateId: KuV2pzbncY6DDetb9HsYoE3sEk3Oy9IGgHYj5FIuYhA
+  url: https://www.baidu.com/
+ 
+###################################
+### 出报告通知
+###################################
+reportOk:
+  templateId: 9Uzoi3VaPLbYe3l3PL3tmpBKL_iEixu26Ov5BR7Xmes
+  url: https://www.baidu.com/
+  
+###################################
+### 充值成功通知
+###################################
+feeOk:
+  templateId: VcbnF3ldkTM8gzTJBfxuCbwUjzDH42Cu0452gUR7s6M
+  url: https://www.baidu.com/
+  
+###################################
+### 结算成功通知
+###################################
+balanceOk:
+  templateId: xBEn0aq_Mi0edmU5QGRQ7NU4_EV-dXfRWmx4zl9nxBA
+  url: https://www.baidu.com/
