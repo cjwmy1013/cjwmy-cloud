@@ -31,7 +31,7 @@ spring:
   datasource:
     platform: mysql
     #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
-    url: jdbc:mysql://192.168.14.185:3308/wechat_patient?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.14.185:3308/ZOEWECHAT?characterEncoding=utf8&useSSL=false
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
