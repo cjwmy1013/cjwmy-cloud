@@ -51,7 +51,7 @@ mybatis:
   #指明mapper的xml文件存放位置
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
-  type-aliases-package: com.zoe.example,com.zoe.business,com.zoe.function
+  type-aliases-package: com.zoe.example,com.zoe.business,com.zoe.function,com.zoe.frame.common.entity
   config-location: classpath:mybatis-config.xml
 
 ###################################
