@@ -103,7 +103,8 @@ author:
 ### signInFlag：是否需要签到（0：不需要；1：需要）
 ###################################
 project:
-  hospital: 宁德第一医院
+  hospital: 厦门大学附属第一医院
+  hospitalAddress: 厦门市镇海路55号
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
