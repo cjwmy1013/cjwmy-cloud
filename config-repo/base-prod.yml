@@ -5,7 +5,7 @@
 #  client:
 #    serviceUrl:
 #      #defaultZone: http://localhost:8761/eureka/
-#      defaultZone: http://192.168.14.185:8761/eureka/
+#      defaultZone: http://192.168.1.63:8761/eureka/
 #  instance:
 #    preferIpAddress: true
 #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
@@ -31,18 +31,11 @@ spring:
   datasource:
     platform: mysql
     #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
-    url: jdbc:mysql://192.168.14.185:3308/wechat_patient?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.14.185:3308/ZOEWECHAT?characterEncoding=utf8&useSSL=false
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-  
-  # rabbitmq配置
-  rabbitmq:
-      password: 1234
-      port: 5672
-      host: 192.168.1.63
-      username: admin
 
 ###################################
 ### MyBatis配置
@@ -51,7 +44,7 @@ mybatis:
   #指明mapper的xml文件存放位置
   mapper-locations: classpath:/mappings/*Mapper.xml
   #指明和数据库映射的实体的所在包
-  type-aliases-package: com.zoe.example,com.zoe.business,com.zoe.function
+  type-aliases-package: com.zoe.example,com.zoe.business,com.zoe.function,com.zoe.frame.common.entity
   config-location: classpath:mybatis-config.xml
 
 ###################################
@@ -103,7 +96,8 @@ author:
 ### signInFlag：是否需要签到（0：不需要；1：需要）
 ###################################
 project:
-  hospital: 宁德第一医院
+  hospital: 厦门大学附属第一医院
+  hospitalAddress: 厦门市镇海路55号
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
@@ -115,4 +109,8 @@ project:
 ### 系统级配置
 ###################################
 system:
+  hipWs: http://192.168.14.170:1506/services/HIPServer?wsdl
+  imageServer: http://cjwmy.mynatapp.cc
   zuulTimeout: 10000
+  defaultReply: what are you talking about.
+  
