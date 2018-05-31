@@ -121,6 +121,3 @@ system:
   qrcodeServer: http://localhost:8080/qrcode/
   zuulTimeout: 10000
   defaultReply: what are you talking about.
-  
-  http://localhost:8080/qrcode
-  
