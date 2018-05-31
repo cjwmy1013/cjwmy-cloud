@@ -118,6 +118,9 @@ project:
 system:
   hipWs: http://192.168.14.170:1506/services/HIPServer?wsdl
   imageServer: http://cjwmy.mynatapp.cc
+  qrcodeServer: http://localhost:8080/qrcode/
   zuulTimeout: 10000
   defaultReply: what are you talking about.
+  
+  http://localhost:8080/qrcode
   
