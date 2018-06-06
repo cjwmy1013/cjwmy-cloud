@@ -111,6 +111,7 @@ author:
 project:
   hospital: 厦门大学附属第一医院
   hospitalAddress: 厦门市镇海路55号
+  hospitalLevel: 三级甲等
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
@@ -120,20 +121,6 @@ project:
   hosLongitude: 39.1005053616
   hosLatitude: 116.8131292775
   hosDistance: 2000
-
-###################################
-### 医院级配置
-### hospitalName：医院名称
-### hospitalAddress：医院地址
-### hospitalLevel：医院等级
-### hosLongitude：医院精度
-### hosLatitude：医院纬度
-### hosDistance：签到距离
-###################################
-hospital:
-  hospitalName: 厦门大学附属第一医院
-  hospitalAddress: 厦门市镇海路55号
-  hospitalLevel: 三级甲等
 
 ###################################
 ### 系统级配置
