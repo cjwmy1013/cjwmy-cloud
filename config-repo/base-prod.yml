@@ -111,6 +111,7 @@ author:
 project:
   hospital: 厦门大学附属第一医院
   hospitalAddress: 厦门市镇海路55号
+  hospitalLevel: 三级甲等
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
