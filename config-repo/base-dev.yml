@@ -17,7 +17,7 @@ spring:
 
   #缓存配置
   redis:
-      host: 192.168.1.63
+      host: 127.0.0.1
       port: 6000
       password: zndz
       timeout: 10000
@@ -31,17 +31,17 @@ spring:
   datasource:
     platform: mysql
     #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
-    url: jdbc:mysql://192.168.14.185:3308/ZOEWECHAT?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/ZOEWECHAT?characterEncoding=utf8&useSSL=false
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-  
-  # rabbitmq配置
+
+  #rabbitmq配置
   rabbitmq:
       password: 1234
       port: 5672
-      host: 192.168.1.63
+      host: 127.0.0.1
       username: admin
 
 ###################################
@@ -101,23 +101,34 @@ author:
 ### drugFlag：药房标志（0：关；1：点击方式；2扫码方式）
 ### clinicFlag：诊疗队列开关（0：关；1：开）
 ### signInFlag：是否需要签到（0：不需要；1：需要）
+### breakNum：黑名单爽约次数
+### breakDay：黑名单保存日期
+### cancelWeekNum：可取消的周次数
+### hosLongitude：医院精度
+### hosLatitude：医院纬度
+### hosDistance：签到距离
 ###################################
 project:
   hospital: 厦门大学附属第一医院
   hospitalAddress: 厦门市镇海路55号
+  hospitalLevel: 三级甲等
   drugFlag: 1
   clinicFlag: 0
   signInFlag: 1
   breakNum: 3
   breakDay: 7
   cancelWeekNum: 3
+  hosLongitude: 39.1005053616
+  hosLatitude: 116.8131292775
+  hosDistance: 2000
 
 ###################################
 ### 系统级配置
 ###################################
 system:
-  hipWs: http://192.168.14.170:1506/services/HIPServer?wsdl
+  hipWs: http://192.168.14.186:1506/services/HipService?wsdl
+  hipMethod: HIPMessageServer
   imageServer: http://cjwmy.mynatapp.cc
+  qrcodeServer: https://cjwmy.mynatapp.cc/qrcode/
   zuulTimeout: 10000
   defaultReply: what are you talking about.
-  
