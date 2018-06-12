@@ -82,9 +82,9 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2000
+            timeoutInMilliseconds: 10000
         timeout:
-          enabled: true
+          enabled: false
 
 ###################################
 ### 公众号信息
