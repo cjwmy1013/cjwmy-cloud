@@ -62,31 +62,6 @@ feign:
     enabled: true
 
 ###################################
-### 超时相关配置
-###################################
-#example-demo:
-#  ribbon:
-#    ConnectTimeout: 500
-#    MaxAutoRetries: l
-#    MaxAutoRetriesNextServer: 1
-#    OkToRetryOnAllOperations: true
-#    ReadTimeout: 2000
-
-###################################
-### 服务降级超时时间（默认1秒）
-### 是否启用超时发生异常（默认true）
-###################################
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 6000
-        timeout:
-          enabled: true
-
-###################################
 ### 公众号信息
 ###################################
 wx: 
