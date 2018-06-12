@@ -73,6 +73,20 @@ feign:
 #    ReadTimeout: 2000
 
 ###################################
+### 服务降级超时时间（默认1秒）
+### 是否启用超时发生异常（默认true）
+###################################
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+        timeout:
+          enabled: true
+
+###################################
 ### 公众号信息
 ###################################
 wx: 
