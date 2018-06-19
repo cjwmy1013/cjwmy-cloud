@@ -17,7 +17,7 @@ spring:
 
   #缓存配置
   redis:
-      host: 127.0.0.1
+      host: localhost
       port: 6000
       password: zndz
       timeout: 10000
@@ -31,7 +31,7 @@ spring:
   datasource:
     platform: mysql
     #url: jdbc:mysql://192.168.14.137:3306/wechat_patient?characterEncoding=utf8&useSSL=false
-    url: jdbc:mysql://127.0.0.1:3306/ZOEWECHAT?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/ZOEWECHAT?characterEncoding=utf8&useSSL=false
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
@@ -41,7 +41,7 @@ spring:
   rabbitmq:
       password: 1234
       port: 5672
-      host: 127.0.0.1
+      host: localhost
       username: admin
 
 ###################################
@@ -60,17 +60,6 @@ mybatis:
 feign:
   hystrix:
     enabled: true
-
-###################################
-### 超时相关配置
-###################################
-#example-demo:
-#  ribbon:
-#    ConnectTimeout: 500
-#    MaxAutoRetries: l
-#    MaxAutoRetriesNextServer: 1
-#    OkToRetryOnAllOperations: true
-#    ReadTimeout: 2000
 
 ###################################
 ### 公众号信息
