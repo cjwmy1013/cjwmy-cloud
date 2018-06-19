@@ -17,7 +17,7 @@ spring:
 
   #缓存配置
   redis:
-      host: localhost
+      host: 111.67.193.251
       port: 6000
       password: zndz
       timeout: 10000
@@ -41,7 +41,7 @@ spring:
   rabbitmq:
       password: 1234
       port: 5672
-      host: localhost
+      host: 111.67.193.251
       username: admin
 
 ###################################
